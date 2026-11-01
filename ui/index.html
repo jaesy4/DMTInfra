@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dmts.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="brand">
+        <div class="logo">DT</div>
+        <div>
+          <div class="brand-name">Document Tracker</div>
+          <div class="brand-sub" id="brand-company"></div>
+        </div>
+      </div>
+      <nav id="nav">
+        <button data-act="nav" data-view="dashboard">Dashboard</button>
+        <button data-act="nav" data-view="register">Documents <span id="nav-overdue" class="nav-badge hidden"></span></button>
+        <button data-act="nav" data-view="activity">Activity</button>
+        <button data-act="nav" data-view="reports">Print &amp; Export</button>
+        <button data-act="nav" data-view="settings">Settings</button>
+      </nav>
+      <div class="sidebar-foot">Works offline · drop PDF files anywhere to add</div>
+    </aside>
+    <main id="main"></main>
+  </div>
+  <div id="drop-hint" class="hidden"><div>Drop PDF files to add documents</div></div>
+  <div id="toasts"></div>
+  <div id="print-area"></div>
+  <script src="app.js"></script>
+</body>
+</html>

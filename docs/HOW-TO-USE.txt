@@ -1,0 +1,41 @@
+DOCUMENT TRACKER - HOW TO USE
+=============================
+
+INSTALL
+- No installation. Put DocumentTracker.exe in its own folder (or USB drive) and double-click it.
+- If Windows says "Windows protected your PC": click "More info" -> "Run anyway".
+- Requires Windows 10 or 11.
+
+WHERE YOUR DATA IS
+- A "DMTSData" folder is created next to the .exe:
+    dmts.db  = all records and tracking history
+    vault\   = copies of your PDF files (your original files are never moved or changed)
+- To move to another PC: copy the .exe AND the DMTSData folder together.
+- Settings -> "Back up to a folder..." -> pick e.g. your Google Drive or OneDrive folder.
+  It saves a dated copy of the database plus any new files. Do NOT run the app's
+  DMTSData folder itself from inside Google Drive/OneDrive.
+
+FIRST TIME
+- Settings: company name, your office (e.g. PMO), your name, document number prefix,
+  and the lists of people/offices (e.g. Mr. Sabanal, Accounting), categories and actions.
+
+DAILY USE
+1. Add documents: drag PDF files onto the window, or click "+ New Document".
+   - Several files at once = several documents. Numbers are generated (e.g. PMO-2026-0001).
+   - "+ Add row without file" for paper documents.
+   - If the exact same PDF is already saved, you are warned.
+2. Track where it is: click "Update" (or "Update status / location" on the document page).
+   Example: Action "For Approval", Now with "Mr. Sabanal", Due back = date you expect it back.
+   Later: Action "Approved", Now with "Accounting".
+   Every update is saved in the Tracking history (from -> to, date, remarks, by).
+3. Red flag: a document turns RED "OVERDUE" when it is still out past its due-back date.
+   "Released", "Filed / Archived" and "Cancelled" close the document (no more flag).
+4. Revisions: on the document page, "+ Add revision / file". The newest is "current".
+5. Dashboard shows "Where are the documents now?" - click a name to see their documents.
+
+PRINT / PDF / EXCEL
+- Print & Export: Follow-up list (everything with one person/office), Overdue report,
+  Document register, Expiry report. Each document has a "Print tracking slip"
+  (history + blank rows for routing on paper).
+- In the print window choose your printer, or "Save as PDF" / "Microsoft Print to PDF".
+- Export to Excel: document register, full tracking history.
